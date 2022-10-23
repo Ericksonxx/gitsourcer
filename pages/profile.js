@@ -176,16 +176,16 @@ const User  = ({user})  => {
                         </div>
                         <div className="grid grid-cols-3 m-auto text-center -mt-4 mb-20">
                             {touchEmail}
-                            <a target="_blank" href={searchLink}>
+                            <a target="_blank" rel="noreferrer" href={searchLink}>
                                 <div className="w-fit px-4 py-px rounded-full">
-                                    <a href={searchLink} target="_blank">
+                                    <a href={searchLink} target="_blank" rel="noreferrer">
                                         <img src="https://img.icons8.com/glyph-neue/50/FFFFFF/linkedin-circled.png"/>
                                     </a>
                                 </div>
                             </a>
-                            <a target="_blank" href={data.blog}>
+                            <a target="_blank" rel="noreferrer" href={data.blog}>
                                 <div className="w-fit px-4 py-px rounded-full">
-                                    <a href={data.blog} target="_blank">
+                                    <a href={data.blog} target="_blank" rel="noreferrer">
                                         {blog}
                                     </a>
                                 </div>
