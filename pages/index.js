@@ -18,7 +18,7 @@ function App({userPass}) {
 
     fetch(`https://api.github.com/search/users?q=location:${formInput.location} followers:>=50 ${formInput.bio} +in:description language:${formInput.language} type:user`, {
       headers : new Headers ({
-        'Authorization': 'Token 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'
+        'Authorization': 'Token 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'
       })
     })
      .then(response => response.json())
@@ -29,7 +29,7 @@ function App({userPass}) {
 
     return(
       <div className="grid grid-cols-10">
-        <div className="col-span-4 overflow-scroll h-screen">
+        <div className="col-span-4 overflow-scroll h-screen bg-slate-700">
         <div className="bg-slate-700 py-20 text-slate-100">
 <div className="ml-6 grid">
   <div className="font-bold text-slate-100 text-2xl text-center">
