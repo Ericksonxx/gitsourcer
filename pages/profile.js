@@ -22,7 +22,7 @@ const User  = ({user})  => {
   useEffect(() => {
     fetch(`https://api.github.com/users/${user}`, {
         headers : new Headers ({
-          'Authorization': 'Token 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'
+          'Authorization': 'Token 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'
         })
       })
        .then(response => response.json())
@@ -31,7 +31,7 @@ const User  = ({user})  => {
 
        fetch(`https://api.github.com/users/${user}/repos`, {
         headers : new Headers ({
-          'Authorization': 'Token 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'
+          'Authorization': 'Token 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'
         })
       })
        .then(response => response.json())

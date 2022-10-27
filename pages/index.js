@@ -18,7 +18,7 @@ function App({userPass}) {
 
     fetch(`https://api.github.com/search/users?q=location:${formInput.location} followers:>=50 ${formInput.bio} +in:description language:${formInput.language} type:user`, {
       headers : new Headers ({
-        'Authorization': 'Token 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'
+        'Authorization': 'Token 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'
       })
     })
      .then(response => response.json())
